@@ -1,0 +1,19 @@
+<%= simple_form_for(@question) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :question %>
+    <%= f.input :subject %>
+    <%= f.input :topic %>
+    <%= f.input :grade %>
+    <%= f.input :type_of_question %>
+    <%= f.input :image %>
+    <%= f.input :school %>
+    <%= f.input :owner %>
+    <%= f.association :user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
